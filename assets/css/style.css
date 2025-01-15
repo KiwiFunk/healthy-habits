@@ -14,10 +14,21 @@ body {
     font-family: 'Sen', sans-serif;
     color: var(--body-color);
     background-color: #dddddd;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Exo', sans-serif;
+}
+
+/* Main */
+
+main {
+    max-width: 1500px;
+    width: 100%;
 }
 
 /* Header */
@@ -27,19 +38,19 @@ header {
 
 /* Cards */
 
-.container {
+.row {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 0 20px;
+    margin: 0 20px 20px 20px;       /* Top, Right, Bottom, Left */
 }
 
 .card {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    width: 30vw;
+    width: 30%;
     aspect-ratio: 1 / 1;
     text-align: center;
     z-index: 1;
@@ -58,6 +69,11 @@ header {
     height: 100%;
     object-fit: cover;
     z-index: 2;
+    transition: ease-in-out 0.25s;
+}
+
+.card:hover img {
+    transform: scale(1.07); 
 }
 
 .card > .textbox {
@@ -108,7 +124,9 @@ header {
 }
 
 .card h3 {
-    font-size: 1.65rem;
+    font-size: 1.4em;
+    font-size: clamp(1.1em, 1vw + 0.7em, 2em);
+    color: var(--accent-color-alt);
 }
 
 /* Media Queries */
@@ -123,5 +141,15 @@ header {
     .card .textbox.expanded .extra-text {
         display: block;
         margin: 20px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .card .textbox.expanded .main-text {
+        margin: 40px;
+    }
+
+    .card .textbox.expanded .extra-text {
+        margin: 40px;
     }
 }
