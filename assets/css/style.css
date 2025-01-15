@@ -57,7 +57,7 @@ nav {
 /* Main */
 
 main {
-    max-width: 1500px;
+    max-width: 1400px;
     width: 100%;
 }
 
@@ -218,25 +218,25 @@ main {
 
 /* Media Queries */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
     .card .textbox.expanded {
         overflow: auto;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1270px) {
     .card .textbox.expanded .extra-text {
         display: block;
         margin: 20px;
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1350px) {
     .card .textbox.expanded .main-text {
-        margin: 40px;
+        margin: 20px 40px;
     }
 
     .card .textbox.expanded .extra-text {
-        margin: 40px;
+        margin: 20px 40px;
     }
 }
