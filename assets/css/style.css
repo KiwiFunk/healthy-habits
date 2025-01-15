@@ -69,13 +69,18 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 25%;
+    height: 20%;
     transition: height 0.2s ease-in-out;
     overflow: hidden;
+    display: flex; 
+    flex-direction: column; /* Flex direction to column */ 
+    align-items: center; /* Center horizontally */ 
+    justify-content: center; /* Center vertically */
 }
 
 .card .textbox.expanded {
     height: 100%;
+    display: block;
 }
 
 .card .textbox p {
@@ -104,5 +109,4 @@ header {
 
 .card h3 {
     font-size: 1.6rem;
-    margin-bottom: -6px;
 }
