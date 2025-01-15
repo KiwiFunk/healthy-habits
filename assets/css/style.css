@@ -36,21 +36,21 @@ header {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     width: 30vw;
     aspect-ratio: 1 / 1;
     text-align: center;
     z-index: 1;
     position: relative;
     overflow: hidden;
-    padding-bottom: 90px;
-    transition: ease-in-out 0.2s;
+    padding-bottom: 5vw;
+    transition: ease-in-out 0.15s;
 }
 
 .card:hover {
-    transform: scale(1.02); 
+    transform: scale(1.03); 
 }
 
 .card img {
@@ -87,7 +87,7 @@ header {
     display: none;
 }
 
-.card .textbox.expanded p {
+.card .textbox.expanded .main-text {
     display: block;
     margin: 20px;
 }
@@ -108,5 +108,20 @@ header {
 }
 
 .card h3 {
-    font-size: 1.6rem;
+    font-size: 1.65rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 850px) {
+    .card .textbox.expanded {
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card .textbox.expanded .extra-text {
+        display: block;
+        margin: 20px;
+    }
 }
