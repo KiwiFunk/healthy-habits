@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 //Creating tooltip on initial hover
 
 document.addEventListener('DOMContentLoaded', () => {
