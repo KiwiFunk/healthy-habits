@@ -60,7 +60,31 @@ header h2 {
 }
 
 nav {
-    
+    max-width: 1400px;
+    width: 100%; 
+    position:absolute;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fcf4dd;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffffff;
 }
 
 
