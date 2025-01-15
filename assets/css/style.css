@@ -42,24 +42,64 @@ header {
     width: 30vw;
     aspect-ratio: 1 / 1;
     text-align: center;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 90px;
+    transition: ease-in-out 0.2s;
 }
+
+.card:hover {
+    transform: scale(1.02); 
+}
+
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: translateY(25px);
-    /*
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    */
+    z-index: 2;
 }
 
 .card > .textbox {
     background-color: #FCF4DD;
-    padding: 1px;
     border-radius: inherit;
-
+    z-index: 3;
     color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    transition: height 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.card .textbox.expanded {
+    height: 100%;
+}
+
+.card .textbox p {
+    display: none;
+}
+
+.card .textbox.expanded p {
+    display: block;
+    margin: 20px;
+}
+
+.card .textbox button {
+    display: none;
+}
+
+.card .textbox.expanded button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .card h3 {
