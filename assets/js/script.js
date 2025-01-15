@@ -23,3 +23,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+//Creating tooltip on initial hover
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    let hasClickedCard = false;
+
+    cards.forEach(card => {
+        // Create and append the tooltip to the body
+        const tooltip = document.createElement('div');
+        tooltip.classList.add('tooltip');
+        tooltip.textContent = 'Click Me!';
+        document.body.appendChild(tooltip);
+
+        card.addEventListener('mouseenter', () => {
+            // Position the tooltip above the card
+            const rect = card.getBoundingClientRect();
+            tooltip.style.left = `${rect.left + rect.width / 2}px`;
+            tooltip.style.top = `${rect.top - 25}px`;
+            tooltip.style.display = 'block';
+        });
+
+        card.addEventListener('mouseleave', () => {
+            tooltip.style.display = 'none';
+        });
+
+        card.addEventListener('click', () => {
+            // Hide all tooltips after the first click
+            if (!hasClickedCard) {
+                hasClickedCard = true;
+                document.querySelectorAll('.tooltip').forEach(tp => tp.style.display = 'none');
+            }
+        });
+    });
+});
