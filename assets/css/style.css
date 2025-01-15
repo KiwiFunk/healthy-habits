@@ -97,12 +97,19 @@ main {
 
 
 /* Cards */
+#cards {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 35px;
+    width: 90%;
     margin: 0 20px 35px 20px;       /* Top, Right, Bottom, Left */
 }
 
