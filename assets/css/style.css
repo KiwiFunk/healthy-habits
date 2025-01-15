@@ -13,10 +13,11 @@
 
 html, body {
     min-height: 100%;
+    margin: 0;
 }
 
 body {
-    margin: 0;
+    
     font-family: 'Sen', sans-serif;
     color: var(--body-color);
     background-color: #F7EDD5;
@@ -26,10 +27,21 @@ body {
     justify-content: center;
     min-height: 100vh;
     min-height: 100svh;
+    overflow-x: hidden;      /* Scuffed fix for horizontal scrollbar */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Exo', sans-serif;
+}
+
+button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Header */
@@ -93,6 +105,8 @@ nav a:hover {
 main {
     max-width: 1400px;
     width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 
@@ -102,6 +116,7 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .row {
@@ -110,7 +125,7 @@ main {
     align-items: center;
     gap: 35px;
     width: 90%;
-    margin: 0 20px 35px 20px;       /* Top, Right, Bottom, Left */
+    margin-bottom:35px;
 }
 
 .card {
@@ -188,13 +203,6 @@ main {
 
 .card .textbox.expanded button {
     display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .card h3 {
@@ -240,6 +248,61 @@ main {
     border-style: solid;
     border-color: #333 transparent transparent transparent; /* Arrow pointing down */
 }
+
+/* Details */
+
+#details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: black;
+}
+
+#details h2 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin: 0
+}
+
+.navigation {
+    width: 100%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+.return {
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+.detail-img {
+    width: 60%;
+}
+
+.detail-content {
+    width: 38%
+}
+
+.detail-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    transition: ease-in-out 0.25s;
+}
+
 
 /* Footer */
 
