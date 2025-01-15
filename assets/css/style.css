@@ -1,0 +1,40 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
+
+/* Variables */
+:root {
+    --accent-color: #f4e04d;
+    --accent-color-alt: #ff6f61;
+    --heading-color: #ffffff;
+    --body-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Sen', sans-serif;
+    color: var(--body-color);
+    background-color: #dddddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Exo', sans-serif;
+}
+
+/* Cards */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #7a7479;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+}
+    
