@@ -1,3 +1,5 @@
+//Card expansion on click
+
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
 
@@ -38,11 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(tooltip);
 
         card.addEventListener('mouseenter', () => {
-            // Position the tooltip above the card
-            const rect = card.getBoundingClientRect();
-            tooltip.style.left = `${rect.left + rect.width / 2}px`;
-            tooltip.style.top = `${rect.top - 25}px`;
-            tooltip.style.display = 'block';
+            if (!hasClickedCard) {
+                // Position the tooltip above the card
+                const rect = card.getBoundingClientRect();
+                tooltip.style.left = `${rect.left + rect.width / 2}px`;
+                tooltip.style.top = `${rect.top - 25}px`;
+                tooltip.style.display = 'block';
+            }
         });
 
         card.addEventListener('mouseleave', () => {
