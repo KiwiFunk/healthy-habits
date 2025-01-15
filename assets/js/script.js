@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!hasClickedCard) {
                 // Position the tooltip above the card
                 const rect = card.getBoundingClientRect();
-                tooltip.style.left = `${rect.left + rect.width / 2}px`;
-                tooltip.style.top = `${rect.top - 25}px`;
+                tooltip.style.left = `${rect.left + rect.width / 2 + window.scrollX}px`;
+                tooltip.style.top = `${rect.top - 25 + window.scrollY}px`;
                 tooltip.style.display = 'block';
             }
         });

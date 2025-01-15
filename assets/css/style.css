@@ -68,21 +68,21 @@ header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin: 0 20px 20px 20px;       /* Top, Right, Bottom, Left */
+    gap: 35px;
+    margin: 0 20px 35px 20px;       /* Top, Right, Bottom, Left */
 }
 
 .card {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 28%;
     aspect-ratio: 1 / 1;
     text-align: center;
     z-index: 1;
     position: relative;
     overflow: hidden;
-    padding-bottom: 5vw;
+    padding-bottom: 4vw;
     transition: ease-in-out 0.15s;
     overflow: visible; /* Allow content to extend beyond the card boundaries */
 }
