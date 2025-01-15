@@ -10,10 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Collapse all other textboxes
             document.querySelectorAll('.textbox').forEach(tb => tb.classList.remove('expanded'));
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('expanded'));    //For wiggle Anim
 
             // Expand the clicked textbox if it was not already expanded
             if (!isExpanded) {
                 textbox.classList.add('expanded');
+                card.classList.add('expanded');    //For wiggle Anim
             }
         });
     });
@@ -22,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (event) => {
         if (!event.target.closest('.card')) {
             document.querySelectorAll('.textbox').forEach(tb => tb.classList.remove('expanded'));
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('expanded'));    //For wiggle Anim
         }
     });
 });
