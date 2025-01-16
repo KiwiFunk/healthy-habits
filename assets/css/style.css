@@ -119,11 +119,6 @@ main {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
-}
-
-
-/* Cards */
-#cards {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -131,13 +126,16 @@ main {
     width: 100%;
 }
 
-.row {
+
+/* Cards */
+#cards {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 35px;
-    width: 94%;
-    margin-bottom:35px;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .card {
@@ -145,6 +143,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     width: 28%;
+    min-width: 260px;
     aspect-ratio: 1 / 1;
     text-align: center;
     z-index: 1;
@@ -163,13 +162,17 @@ main {
 .card img {
     width: 100%;
     height: 100%;
+
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+    
     object-fit: cover;
     z-index: 2;
     transition: ease-in-out 0.25s;
 }
 
 .card:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.22); 
 }
 
 .card > .textbox {
@@ -227,7 +230,7 @@ main {
 
 .card h3 {
     font-size: 1.4em;
-    font-size: clamp(1.1em, 1vw + 0.7em, 2em);
+    font-size: clamp(1.1em, 1vw + 0.7em, 1.5em);
     color: var(--accent-color);
 }
 
@@ -402,6 +405,7 @@ footer a:hover {
 }
 
 
+
 /* Animations */
 
 @keyframes wiggle {
@@ -420,6 +424,22 @@ footer a:hover {
 }
 
 /* Media Queries */
+
+
+
+/* Tablets and larger */
+@media screen and (min-width: 768px) {
+  #cards {
+    width: 90%;
+  }
+}
+
+/* Laptops and larger */
+@media screen and (min-width: 992px) {
+    #cards {
+        width: 85%;
+    }
+}
 
 @media screen and (max-width: 950px) {
     .card .textbox.expanded {
@@ -441,5 +461,9 @@ footer a:hover {
 
     .card .textbox.expanded .extra-text {
         margin: 20px 40px;
+    }
+
+    .card {
+        min-width: 360px;
     }
 }

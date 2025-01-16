@@ -161,3 +161,4 @@ function showContentBox(id) {
          window.location.search = `?details=${contentIds[currentIndex]}`;
      });
  }
+
