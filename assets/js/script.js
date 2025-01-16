@@ -87,38 +87,38 @@ function getQueryParameter(variable) {
 //Capture the 'details' query parameter
 var details = getQueryParameter('details');
 
-if (details.toLowerCase() === 'eathealthy') {
-    showContentBox('EatHealthy');
-}
-
-else if (details.toLowerCase() === 'managestress') {
-    showContentBox('ManageStress');
-}
-
-else if (details.toLowerCase() === 'newskills') {
-    showContentBox('NewSkills');
-}
-
-else if (details.toLowerCase() === 'regularexercise') {
-    showContentBox('RegularExercise');
-}
-
-else if (details.toLowerCase() === 'outdoors') {
-    showContentBox('Outdoors');
-}
-else if (details.toLowerCase() === 'mindfulness') {
-    showContentBox('Mindfulness');
-}
-
-else if (details.toLowerCase() === 'hydration') {
-    showContentBox('Hydration');
-}
-else if (details.toLowerCase() === 'friendship') {
-    showContentBox('Friendship');
-}
-
-else if (details.toLowerCase() === 'sleep') {
-    showContentBox('Sleep');
+if (details) {
+    switch (details.toLowerCase()) {
+        case 'eathealthy':
+            showContentBox('EatHealthy');
+            break;
+        case 'managestress':
+            showContentBox('ManageStress');
+            break;
+        case 'newskills':
+            showContentBox('NewSkills');
+            break;
+        case 'regularexercise':
+            showContentBox('RegularExercise');
+            break;
+        case 'outdoors':
+            showContentBox('Outdoors');
+            break;
+        case 'mindfulness':
+            showContentBox('Mindfulness');
+            break;
+        case 'hydration':
+            showContentBox('Hydration');
+            break;
+        case 'friendship':
+            showContentBox('Friendship');
+            break;
+        case 'sleep':
+            showContentBox('Sleep');
+            break;
+        default:
+            break;
+    }
 }
 
 //Replace with a switch once other links are filled out.
