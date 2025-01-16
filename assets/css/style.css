@@ -19,7 +19,7 @@ html, body {
 
 body {
     font-family: 'Sen', sans-serif;
-    background-color: #F7EDD5;
+    background-color: var(--body-color);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -31,16 +31,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Exo', sans-serif;
-}
-
-button {
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .linkbutton {
@@ -94,6 +84,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: flex-end;
+    align-items: baseline;
     list-style: none;
     padding: 0;
     gap: 20px;
@@ -109,7 +100,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -351,7 +342,7 @@ main {
 footer {
     text-align: center;
     margin-top: auto;
-    background-color: #F26848;
+    background-color: var(--accent-color);
     width: 100%;
     min-height: 8vh;
     display: flex;
@@ -474,6 +465,31 @@ footer a:hover {
 .detail-content a {
     margin-top: 10px;
     display: inline-block;
+}
+
+/* High Contrast Toggle Button */
+#contrast-toggle {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+#contrast-toggle:hover {
+    color: #ffffff;
+}
+
+/* High Contrast Mode */
+body.high-contrast {
+    --accent-color: #770b00;
+    --body-color: #faf3e3;
+
+}
+
+.textbox.high-contrast {
+    background-color: #fff9ea;
 }
 
 /* Animations */

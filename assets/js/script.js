@@ -348,3 +348,15 @@ function showContentBox(id) {
          window.location.search = `?details=${contentIds[currentIndex]}`;
      });
  }
+
+//High Contrast Mode
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contrastToggle = document.getElementById('contrast-toggle');
+    contrastToggle.addEventListener('click', () => {
+        document.body.classList.toggle('high-contrast');
+        document.querySelectorAll('.textbox').forEach(textbox => {
+            textbox.classList.toggle('high-contrast');
+        });
+    });
+});
