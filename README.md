@@ -5,6 +5,8 @@ A site promoting healthy habits to better your wellbeing to a variety of ages
 
 The goal of this project is to give advice and signpost people to topics and pages to help better and improve their mental and physical wellbeing. This is by no means a professional website, but seeks to give advice on simple lifestyle changes that can have wide benefits to wellbeing.
 
+The site has been created based on frameworks, allowing for content to be easily added in the future when other artworks are created, or topics are needed. Each card has its data inside of a Class, with an array of classes storing the total number of cards. The mobile carousel uses the data from this array, and the desktop cards are generated for each index value.
+
 ## Wireframes
 
 Wireframes were created in Balsamiq to give an initial idea of the layout. From the start I knew I wanted somethign that could hold a lot of content, yet didnt have a million pages to tab though or navigate. I also planned from early on to deliver a very different experience for mobile and desktop, however this will be a stretch goal due to time constraints.
