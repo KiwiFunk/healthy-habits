@@ -333,6 +333,10 @@ main {
     transition: ease-in-out 0.25s;
 }
 
+.detail-content a {
+    margin-top: 10px;
+    display: inline-block;
+}
 
 /* Footer */
 

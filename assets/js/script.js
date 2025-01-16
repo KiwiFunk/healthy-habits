@@ -95,6 +95,32 @@ else if (details.toLowerCase() === 'managestress') {
     showContentBox('ManageStress');
 }
 
+else if (details.toLowerCase() === 'newskills') {
+    showContentBox('NewSkills');
+}
+
+else if (details.toLowerCase() === 'regularexercise') {
+    showContentBox('RegularExercise');
+}
+
+else if (details.toLowerCase() === 'outdoors') {
+    showContentBox('Outdoors');
+}
+else if (details.toLowerCase() === 'mindfulness') {
+    showContentBox('Mindfulness');
+}
+
+else if (details.toLowerCase() === 'hydration') {
+    showContentBox('Hydration');
+}
+else if (details.toLowerCase() === 'friendship') {
+    showContentBox('Friendship');
+}
+
+else if (details.toLowerCase() === 'sleep') {
+    showContentBox('Sleep');
+}
+
 //Replace with a switch once other links are filled out.
 
 // Function to show the correct content box
