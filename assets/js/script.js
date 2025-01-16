@@ -350,13 +350,17 @@ function showContentBox(id) {
  }
 
 //High Contrast Mode
-
 document.addEventListener('DOMContentLoaded', () => {
     const contrastToggle = document.getElementById('contrast-toggle');
+
+    // Load the user's preference from localStorage
+    if (localStorage.getItem('highContrast') === 'true') {
+        document.body.classList.add('high-contrast');
+    }
+
     contrastToggle.addEventListener('click', () => {
         document.body.classList.toggle('high-contrast');
-        document.querySelectorAll('.textbox').forEach(textbox => {
-            textbox.classList.toggle('high-contrast');
-        });
+        // Save the user's preference to localStorage
+        localStorage.setItem('highContrast', document.body.classList.contains('high-contrast'));
     });
 });
