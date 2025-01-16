@@ -127,3 +127,37 @@ function showContentBox(id) {
         contentBox.style.display = 'flex';
     }
 }
+
+//navarrows functionality 
+
+ // Add event listeners to navigation arrows
+ const navLeft = document.getElementById('navleft');
+ const navRight = document.getElementById('navright');
+
+ //Create an array of content ID's
+ const contentIds = [
+     'EatHealthy',
+     'ManageStress',
+     'NewSkills',
+     'RegularExercise',
+     'Outdoors',
+     'Mindfulness',
+     'Hydration',
+     'Friendship',
+     'Sleep'
+ ];
+
+ if (details) {
+     let currentIndex = contentIds.findIndex(id => id.toLowerCase() === details.toLowerCase());
+     if (currentIndex === -1) currentIndex = 0;
+
+     navLeft.addEventListener('click', () => {
+         currentIndex = (currentIndex - 1 + contentIds.length) % contentIds.length;
+         window.location.search = `?details=${contentIds[currentIndex]}`;
+     });
+
+     navRight.addEventListener('click', () => {
+         currentIndex = (currentIndex + 1) % contentIds.length;
+         window.location.search = `?details=${contentIds[currentIndex]}`;
+     });
+ }
