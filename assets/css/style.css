@@ -3,7 +3,7 @@
 
 /* Variables */
 :root {
-    --accent-color: #ff6f61;
+    --accent-color: #ff3e2b;
     --accent-color-alt: #F5A64C;
     --heading-color: #ffffff;
     --body-color: #F7EDD5;
@@ -74,7 +74,7 @@ header h1 {
 
 }
 
-header h3 {
+header h2 {
     color: var(--accent-color); 
     margin-top: -45px; 
     margin-bottom: -5px; 
