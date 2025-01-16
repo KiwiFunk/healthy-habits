@@ -24,3 +24,19 @@ Wireframes were created in Balsamiq to give an initial idea of the layout. From 
 I created some fun mascot characters to represent each different activity. I felt that this provided more charm and made the topic feel less sterile and medical like a lot of the sites on these topics do. I didn't want to downplay the importance of the contents, yet I also didnt want to make it feel so medical. The aim was to try and reach a range of different ages by having something that kids would enjoy, yet wouldnt feel overly childish to the point an older audience would feel insulted. Another concern was having a cartoon character that felt very coorporate and branded. Cartoons such as Bluey seem to balance this fine line well, and for a professional project, I'd most likely hire an illustrator with a lot of experience in this department.
 
 ![Mascots](docs/CreaturesSiteFull.png)
+
+## Lighthouse Tests 
+
+![Lighthouse](docs/Lighthouse.png)
+
+The performance of my page is pretty good, with the full desktop mode dropping the performance down 5-10 points due to the amount of images being loaded. The majority of clients loading the desktop mode will be using a wifi connection, so this isn't as much of an issue.
+
+My accessibility score was almost perfect, and I have addressed this in the next section.
+
+For best practices, I only have one thing dropping my score so low, which is a warning about using 'overflow: visible' as it may cause objects to render out of bounds. This was an intentional design choice, so I will ignore this.
+
+For SEO, my only issue is the fact that all my links to the details pages feature the same aria text. I can address this by adding a new variable to the card class in my JS. However this is a low priority and not needed for the MVP.
+
+![ContrastCheck](docs/Page%20Contrast.png)
+
+To address the 95 I scored in accessibility, I added a high contrast toggle to the Navbar. This sets the accent color to a darker tone, and lightens the background elements to achieve a sufficient contrast ratio. Lighthouse can't take this toggle into consideration however, so I cant hit 100.
