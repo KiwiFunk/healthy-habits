@@ -108,6 +108,7 @@ nav a {
 
 nav a:hover {
     color: #ffffff;
+    font-weight: 700;
 }
 
 
@@ -356,7 +357,7 @@ main {
 }
 
 .navarrows:hover {
-    transform: scale(1.3);
+    transform: scale(1.1, 1.3);
     background-color: rgba(240, 90, 44, 0.815);
     cursor: pointer;
 }
