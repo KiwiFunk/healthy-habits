@@ -21,7 +21,7 @@ const cardContentsArray = [
             improving mood, reducing anxiety, and boosting overall mental well-being.`,
         extraText: `Essential nutrients like omega-3 fatty acids, B vitamins, and antioxidants play crucial 
             roles in maintaining cognitive function, regulating neurotransmitters, and protecting against stress-related mental health issues.`,
-        image: "assets/images/EatHealthy.png",
+        image: "assets/images/EatHealthy.webp",
         imagealt: "Mascot holding an apple",
         linkname: "Learn More",
         linkhref: "details.html?details=eathealthy"
@@ -32,7 +32,7 @@ const cardContentsArray = [
             as chronic stress can lead to anxiety, depression, and various physical health problems when left unchecked.`,
         extraText: `Learning to recognize stress triggers and developing healthy coping mechanisms, such as 
             exercise, meditation, or talking with friends, can significantly improve your quality of life and protect your long-term mental well-being.`,
-        image: "assets/images/Stress.png",
+        image: "assets/images/Stress.webp",
         imagealt: "Mascot looking stressed with a coffee cup",
         linkname: "Learn More",
         linkhref: "details.html?details=managestress"
@@ -43,7 +43,7 @@ const cardContentsArray = [
             flexibility and creating new neural connections that help maintain brain health and mental sharpness.`,
         extraText: `This mental stimulation not only enhances problem-solving abilities but also boosts 
             self-confidence and provides a sense of accomplishment, contributing to overall emotional well-being and life satisfaction.`,
-        image: "assets/images/Learn.png",
+        image: "assets/images/Learn.webp",
         imagealt: "Mascot playing guitar",
         linkname: "Learn More",
         linkhref: "details.html?details=newskills"
@@ -54,7 +54,7 @@ const cardContentsArray = [
             that naturally reduce stress, anxiety, and depression while improving overall emotional well-being.`,
         extraText: `Physical activity also promotes better sleep patterns, increases energy levels, and boosts self-esteem,
             creating a positive cycle that enhances both physical and mental health outcomes.`,
-        image: "assets/images/Exercise.png",
+        image: "assets/images/Exercise.webp",
         imagealt: "Mascot Exercising",
         linkname: "Learn More",
         linkhref: "details.html?details=regularexercise"
@@ -65,7 +65,7 @@ const cardContentsArray = [
             and decrease anxiety by exposing us to natural environments that promote relaxation and mental restoration.`,
         extraText: `Additionally, being outdoors increases exposure to vitamin D from sunlight, boosts serotonin production,
             and helps establish a stronger connection with the natural world, leading to improved mood and emotional balance.`,
-        image: "assets/images/Nature.png",
+        image: "assets/images/Nature.webp",
         imagealt: "Mascot in nature with a bird on their paw",
         linkname: "Learn More",
         linkhref: "details.html?details=outdoors"
@@ -76,7 +76,7 @@ const cardContentsArray = [
             rather than worrying about the future or dwelling on the past, promoting mental clarity and emotional balance.`,
         extraText: `Regular mindfulness meditation can strengthen your ability to manage difficult emotions, improve focus
             and concentration, and develop a greater sense of inner peace and self-awareness in daily life.`,
-        image: "assets/images/Mindfullness.png",
+        image: "assets/images/Mindfullness.webp",
         imagealt: "Mascot meditating",
         linkname: "Learn More",
         linkhref: "details.html?details=mindfulness"
@@ -87,7 +87,7 @@ const cardContentsArray = [
             can negatively impact mood, concentration, and cognitive performance throughout the day.`,
         extraText: `Maintaining adequate water intake helps regulate neurotransmitter function, reduces stress levels, and supports 
             the body's natural detoxification processes, all of which contribute to better mental health and emotional stability.`,
-        image: "assets/images/Hydrated.png",
+        image: "assets/images/Hydrated.webp",
         imagealt: "Mascot holding up a water bottle",
         linkname: "Learn More",
         linkhref: "details.html?details=hydration"
@@ -98,7 +98,7 @@ const cardContentsArray = [
             deeper connections, and stronger social bonds that are crucial for mental health and emotional well-being.`,
         extraText: `Regular social interactions stimulate the release of positive hormones like oxytocin and serotonin, while also providing a support network
             that helps buffer against stress, anxiety, and depression through shared experiences and mutual understanding.`,
-        image: "assets/images/Friends.png",
+        image: "assets/images/Friends.webp",
         imagealt: "Mascot embracing a friend",
         linkname: "Learn More",
         linkhref: "details.html?details=friendship"
@@ -109,7 +109,7 @@ const cardContentsArray = [
             and restore vital neural connections that support psychological resilience and emotional stability.`,
         extraText: `Studies show that consistent, adequate sleep improves mood regulation, reduces stress levels, and enhances cognitive function, making it 
             a crucial factor in maintaining optimal mental health and emotional balance throughout life.`,
-        image: "assets/images/Sleep.png",
+        image: "assets/images/Sleep.webp",
         imagealt: "Mascot sleeping on the ground",
         linkname: "Learn More",
         linkhref: "details.html?details=sleep"
