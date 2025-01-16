@@ -1,5 +1,4 @@
 //Card expansion on click
-
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
 
@@ -31,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //Creating tooltip on initial hover
-
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
     let hasClickedCard = false;
@@ -68,8 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//Collect query param
+//Details Page Content
 
+//Collect query param
 function getQueryParameter(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split('&');
@@ -120,8 +119,6 @@ if (details) {
             break;
     }
 }
-
-//Replace with a switch once other links are filled out.
 
 // Function to show the correct content box
 function showContentBox(id) {
