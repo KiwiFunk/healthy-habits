@@ -66,3 +66,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+//Collect query param
+
+function getQueryParameter(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+
+        if (pair[0] === variable) {
+            return pair[1];
+        }
+    }
+    return (false);
+}
+
+//Capture the 'details' query parameter
+var details = getQueryParameter('details');
+
+if (details.toLowerCase() === 'eathealthy') {
+    document.getElementById('EatHealthy').style.display = 'block';
+}
+
+else if (details.toLowerCase() === 'managestress') {
+    document.getElementById('ManageStress').style.display = 'block';
+}

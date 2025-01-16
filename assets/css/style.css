@@ -44,6 +44,17 @@ button {
     cursor: pointer;
 }
 
+.linkbutton {
+    padding: 8px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -5px;
+}
+
 /* Header */
 
 header {
@@ -205,6 +216,14 @@ main {
     display: block;
 }
 
+.card .textbox a {
+    display: none;
+}
+
+.card .textbox.expanded a {
+    display: inline-block;
+}
+
 .card h3 {
     font-size: 1.4em;
     font-size: clamp(1.1em, 1vw + 0.7em, 2em);
@@ -253,11 +272,11 @@ main {
 
 #details {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: black;
+    background-color: purple;
 }
 
 #details h2 {
@@ -266,8 +285,21 @@ main {
     margin: 0
 }
 
+.content-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    color: black;
+    gap: 20px;
+    display: none;
+    background-color: #ff6f61;
+}
+
 .navigation {
     width: 100%;
+    background-color: aquamarine;
 }
 
 .navigation a {
@@ -288,11 +320,15 @@ main {
   }
 
 .detail-img {
-    width: 60%;
+    flex: 1 1 60%;
+    width: 55%;
+    background-color: #F5A64C;
 }
 
 .detail-content {
-    width: 38%
+    flex: 1 1 40%;
+    width: 32%;
+    background-color: aqua;
 }
 
 .detail-img img {
