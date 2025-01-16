@@ -276,7 +276,6 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: purple;
 }
 
 #details h2 {
@@ -292,14 +291,13 @@ main {
     align-items: center;
     width: 95%;
     color: black;
-    gap: 20px;
+    gap: 10px;
     display: none;
-    background-color: #ff6f61;
+    margin: 10px 0;
 }
 
 .navigation {
     width: 100%;
-    background-color: aquamarine;
 }
 
 .navigation a {
@@ -320,15 +318,11 @@ main {
   }
 
 .detail-img {
-    flex: 1 1 60%;
-    width: 55%;
-    background-color: #F5A64C;
+    width: 62%;
 }
 
 .detail-content {
-    flex: 1 1 40%;
-    width: 32%;
-    background-color: aqua;
+    width: 35%;
 }
 
 .detail-img img {

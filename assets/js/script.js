@@ -88,9 +88,19 @@ function getQueryParameter(variable) {
 var details = getQueryParameter('details');
 
 if (details.toLowerCase() === 'eathealthy') {
-    document.getElementById('EatHealthy').style.display = 'block';
+    showContentBox('EatHealthy');
 }
 
 else if (details.toLowerCase() === 'managestress') {
-    document.getElementById('ManageStress').style.display = 'block';
+    showContentBox('ManageStress');
+}
+
+//Replace with a switch once other links are filled out.
+
+// Function to show the correct content box
+function showContentBox(id) {
+    const contentBox = document.getElementById(id);
+    if (contentBox) {
+        contentBox.style.display = 'flex';
+    }
 }
