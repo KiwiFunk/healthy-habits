@@ -1,7 +1,7 @@
 // Card Contents
 
 class CardContents{
-    constructor(heading, mainText, extraText, image, imagealt, linkname, linkhref){
+    constructor(heading, mainText, extraText, image, imagealt, linkname, linkhref, linkaria){
         this.heading = heading;
         this.mainText = mainText;
         this.extraText = extraText;
@@ -9,6 +9,7 @@ class CardContents{
         this.imagealt = imagealt;
         this.linkname = linkname;
         this.linkhref = linkhref;
+        this.linkaria = linkaria;
     }
 }
 
@@ -24,7 +25,8 @@ const cardContentsArray = [
         image: "assets/images/EatHealthy.webp",
         imagealt: "Mascot holding an apple",
         linkname: "Learn More",
-        linkhref: "details.html?details=eathealthy"
+        linkhref: "details.html?details=eathealthy",
+        linkaria: "Learn more about eating healthy"
     },
     {
         heading: "Manage Stress",
@@ -35,7 +37,8 @@ const cardContentsArray = [
         image: "assets/images/Stress.webp",
         imagealt: "Mascot looking stressed with a coffee cup",
         linkname: "Learn More",
-        linkhref: "details.html?details=managestress"
+        linkhref: "details.html?details=managestress",
+        linkaria: "Learn more about managing stress"
     },
     {
         heading: "Learn New Things",
@@ -46,7 +49,8 @@ const cardContentsArray = [
         image: "assets/images/Learn.webp",
         imagealt: "Mascot playing guitar",
         linkname: "Learn More",
-        linkhref: "details.html?details=newskills"
+        linkhref: "details.html?details=newskills",
+        linkaria: "Find out more about learning new skills"
     },
     {
         heading: "Regular Exercise",
@@ -57,7 +61,8 @@ const cardContentsArray = [
         image: "assets/images/Exercise.webp",
         imagealt: "Mascot Exercising",
         linkname: "Learn More",
-        linkhref: "details.html?details=regularexercise"
+        linkhref: "details.html?details=regularexercise",
+        linkaria: "Learn more about why regular exercise is so important"
     },
     {
         heading: "Spend Time Outdoors",
@@ -68,7 +73,8 @@ const cardContentsArray = [
         image: "assets/images/Nature.webp",
         imagealt: "Mascot in nature with a bird on their paw",
         linkname: "Learn More",
-        linkhref: "details.html?details=outdoors"
+        linkhref: "details.html?details=outdoors",
+        linkaria: "Discover the benefits of spending time outdoors"
     },
     {
         heading: "Practice Mindfulness",
@@ -79,7 +85,8 @@ const cardContentsArray = [
         image: "assets/images/Mindfullness.webp",
         imagealt: "Mascot meditating",
         linkname: "Learn More",
-        linkhref: "details.html?details=mindfulness"
+        linkhref: "details.html?details=mindfulness",
+        linkaria: "Learn more about why mindfulness practice is so important."
     },
     {
         heading: "Stay Hydrated",
@@ -90,7 +97,8 @@ const cardContentsArray = [
         image: "assets/images/Hydrated.webp",
         imagealt: "Mascot holding up a water bottle",
         linkname: "Learn More",
-        linkhref: "details.html?details=hydration"
+        linkhref: "details.html?details=hydration",
+        linkaria: "Find out more about how much water you should drink, and the benefits of staying hydrated."
     },
     {
         heading: "Make Friends",
@@ -101,7 +109,8 @@ const cardContentsArray = [
         image: "assets/images/Friends.webp",
         imagealt: "Mascot embracing a friend",
         linkname: "Learn More",
-        linkhref: "details.html?details=friendship"
+        linkhref: "details.html?details=friendship",
+        linkaria: "More details on the importance of friendships, and links to tips on making new friends."
     },
     {
         heading: "Get Enough Sleep",
@@ -112,7 +121,8 @@ const cardContentsArray = [
         image: "assets/images/Sleep.webp",
         imagealt: "Mascot sleeping on the ground",
         linkname: "Learn More",
-        linkhref: "details.html?details=sleep"
+        linkhref: "details.html?details=sleep",
+        linkaria: "More information on the importance of sleep, and links to help assist you."
     },
 ];
 
@@ -130,6 +140,7 @@ function updateMainContent(index) {
         document.querySelector('#mobile-content .extra-text').textContent = content.extraText;
         document.getElementById("buttonlink").innerHTML = content.linkname;
         document.getElementById("buttonlink").href = content.linkhref;
+        document.getElementById("buttonlink").setAttribute("aria-label", content.linkaria);
     }
 }
 
@@ -162,7 +173,7 @@ function createCard(content) {
             <h3>${content.heading}</h3>
             <p class="main-text">${content.mainText}</p>
             <p class="extra-text">${content.extraText}</p>
-            <a class="linkbutton" href="${content.linkhref}" aria-label="Learn more">${content.linkname}</a>
+            <a class="linkbutton" href="${content.linkhref}" aria-label="${content.linkaria}">${content.linkname}</a>
         </div>
     `;
     return card;

@@ -39,4 +39,8 @@ For SEO, my only issue is the fact that all my links to the details pages featur
 
 ![ContrastCheck](docs/Page%20Contrast.png)
 
-To address the 95 I scored in accessibility, I added a high contrast toggle to the Navbar. This sets the accent color to a darker tone, and lightens the background elements to achieve a sufficient contrast ratio. Lighthouse can't take this toggle into consideration however, so I cant hit 100.
+To address the 95 I scored in accessibility, I added a high contrast toggle to the Navbar. This sets the accent color to a darker tone, and lightens the background elements to achieve a sufficient contrast ratio across all the criteria. Using session cookies I can make sure the contrast choice remains across all site pages for the duration of the visit.
+
+![ContrastCheck](docs/Contrast%20Mode.png)
+
+After re-running the test with high contrast mode enabled, I was now able to finally score a 100 in accessability.
