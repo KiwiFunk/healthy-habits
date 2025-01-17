@@ -317,7 +317,8 @@ main {
 
 .navarrows:hover {
 
-    background-color: rgba(240, 90, 44, 0.815);
+    background-color: var(--accent-color);
+    opacity: 0.8;
     cursor: pointer;
     color: #ffffff;
 }
