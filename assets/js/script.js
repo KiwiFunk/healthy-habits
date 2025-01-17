@@ -353,14 +353,18 @@ function showContentBox(id) {
 document.addEventListener('DOMContentLoaded', () => {
     const contrastToggle = document.getElementById('contrast-toggle');
 
-    // Load the user's preference from localStorage
-    if (localStorage.getItem('highContrast') === 'true') {
+    // Check if high contrast cookie exists
+    if (document.cookie.includes('highContrast=true')) {
         document.body.classList.add('high-contrast');
     }
 
     contrastToggle.addEventListener('click', () => {
         document.body.classList.toggle('high-contrast');
-        // Save the user's preference to localStorage
-        localStorage.setItem('highContrast', document.body.classList.contains('high-contrast'));
+        // Set session cookie (expires when browser closes)
+        if (document.body.classList.contains('high-contrast')) {
+            document.cookie = 'highContrast=true;path=/';
+        } else {
+            document.cookie = 'highContrast=false;path=/';
+        }
     });
 });
