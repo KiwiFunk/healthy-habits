@@ -3,16 +3,15 @@ A site promoting healthy habits to better your wellbeing to a variety of ages
 
 ## Project Outline
 
-The goal of this project is to give advice and signpost people to topics and pages to help better and improve their mental and physical wellbeing. This is by no means a professional website, but seeks to give advice on simple lifestyle changes that can have wide benefits to the readers personal health. It's goal is to present the information in a way that isn't daunting, and keeps it accessible for a range of ages, from kids to yound adults. Mental health shouldnt be scary.
-
+The goal of this project is to give advice and signpost people to topics and pages to help better and improve their mental and physical wellbeing. This is by no means a professional website, but seeks to give advice on simple lifestyle changes that can have wide benefits to the reader's personal health. Its goal is to present the information in a way that isn't daunting, and keeps it accessible for a range of ages, from kids to young adults. Mental health shouldn't be scary.
 
 ## Wireframes
 
 ![Wireframes](docs/SitePlan3.png)
 
-Wireframes were created in Balsamiq to give an initial idea of the layout. From the start I knew I wanted something that could hold a lot of content, yet didnt have a million pages to tab though or navigate. I also planned from early on to deliver a very different experience for mobile and desktop, as I didnt want the user having an extremely long page to navigate on mobile devices, something that would happen if I simply used flexbox to display every card in a single column.
+Wireframes were created in Balsamiq to give an initial idea of the layout. From the start I knew I wanted something that could hold a lot of content, yet didn't have a million pages to tab through or navigate. I also planned from early on to deliver a very different experience for mobile and desktop, as I didn't want the user having an extremely long page to navigate on mobile devices, something that would happen if I simply used flexbox to display every card in a single column.
 
-I also wanted a way to break up all my information so the page was never full of text, This would keep it accessible for kids, and make it less overwhelming for adults that might be going through hard times. Each section of advice is identified with a simple heading, and a friendly image representing the activity. When the card is clicked on, it expands to show a brief blurb about the subject, and a button to link to a more detailed page on the subject, and signposting to services relating to it. For example, NHS support pages. By doing it this way I can also use queries to link to the associated data, instead of having a long dropdown menu, or multiple HTML pages.
+I also wanted a way to break up all my information so the page was never full of text. This would keep it accessible for kids, and make it less overwhelming for adults that might be going through hard times. Each section of advice is identified with a simple heading, and a friendly image representing the activity. When the card is clicked on, it expands to show a brief blurb about the subject, and a button to link to a more detailed page on the subject, and signposting to services relating to it. For example, NHS support pages. By doing it this way I can also use queries to link to the associated data, instead of having a long dropdown menu, or multiple HTML pages.
 
 ## Technical Details
 
@@ -20,7 +19,7 @@ For populating each card and mobile slide with content, I have created a JavaScr
 
 For mobile the placeholder text is replaced with the content of this class, and then the navigation arrows increment or decrement the index, with checks to prevent out of bounds values. With my cards, I have created a function to build the card HTML, using interpolation to add the data from the class where needed. A foreach loop then iterates through the array and creates a card for every entry.
 
-Tooltips have been added on initial page load to prompt the user to click them. I felt that perhaps clicking the card my not be intuitive for a lot of users, so adding a prompt is an easy way to explain this function. Once the card has been clicked the tooltips are hidden, as they are no longer needed.
+Tooltips have been added on initial page load to prompt the user to click them. I felt that perhaps clicking the card might not be intuitive for a lot of users, so adding a prompt is an easy way to explain this function. Once the card has been clicked the tooltips are hidden, as they are no longer needed.
 
 For the Navbar I originally planned for a burger menu, however as the site didn't have many pages, I felt the complexity of coding one outweighed the benefits in the timeframe of this project. Given it was only 3 links and a toggle for contrast, I opted to simply enlarge it, and center it on mobile layouts using breakpoints. This is definitely an area using something like Bootstrap would have come in handy.
 
@@ -38,8 +37,7 @@ For my fonts, I wanted something rounded yet still semi-professional as it is a 
 
 ![Mascots](docs/CreaturesSiteFull.png)
 
-I created some fun mascot characters to represent each different activity. I felt that this provided more charm and made the topic feel less sterile and medical like a lot of the sites on these topics do. I didn't want to downplay the importance of the contents, yet I also didnt want to make it feel so medical. The aim was to try and reach a range of different ages by having something that kids would enjoy, yet wouldnt feel overly childish to the point an older audience would feel insulted. Another concern was having a cartoon character that felt very coorporate and branded. Cartoons such as Bluey seem to balance this fine line well, and for a professional project, I'd most likely hire an illustrator with a lot of experience in this department.
-
+I created some fun mascot characters to represent each different activity. I felt that this provided more charm and made the topic feel less sterile and medical like a lot of the sites on these topics do. I didn't want to downplay the importance of the contents, yet I also didn't want to make it feel so medical. The aim was to try and reach a range of different ages by having something that kids would enjoy, yet wouldn't feel overly childish to the point an older audience would feel insulted. Another concern was having a cartoon character that felt very corporate and branded. Cartoons such as Bluey seem to balance this fine line well, and for a professional project, I'd most likely hire an illustrator with a lot of experience in this department.
 
 ## Page Testing
 
@@ -60,4 +58,4 @@ To address the 95 I scored in accessibility, I added a high contrast toggle to t
 
 ![ContrastCheck](docs/Contrast%20Mode.png)
 
-After re-running the test with high contrast mode enabled, I was now able to finally score a 100 in accessability. I have also run my page through validators, and made any necessary changes
+After re-running the test with high contrast mode enabled, I was now able to finally score a 100 in accessibility. I have also run my page through validators, and made any necessary changes.
