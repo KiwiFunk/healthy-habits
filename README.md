@@ -3,7 +3,7 @@ A site promoting healthy habits to better your wellbeing to a variety of ages
 
 ## Project Outline
 
-The goal of this project is to give advice and signpost people to topics and pages to help better and improve their mental and physical wellbeing. This is by no means a professional website, but seeks to give advice on simple lifestyle changes that can have wide benefits to wellbeing.
+The goal of this project is to give advice and signpost people to topics and pages to help better and improve their mental and physical wellbeing. This is by no means a professional website, but seeks to give advice on simple lifestyle changes that can have wide benefits to the readers personal health. It's goal is to present the information in a way that isn't daunting, and keeps it accessible for a range of ages, from kids to yound adults. Mental health shouldnt be scary.
 
 
 ## Wireframes
@@ -18,12 +18,11 @@ I also wanted a way to break up all my information so the page was never full of
 
 For populating each card and mobile slide with content, I have created a JavaScript class to hold all the relevant information such as headings, image URLs, description, ARIA details etc. These are then stored in an array of classes. This means I don't have to repeat myself in the HTML file for both the mobile and desktop layouts, and makes consistency, making changes, or adding new slides/cards much simpler.
 
-
 For mobile the placeholder text is replaced with the content of this class, and then the navigation arrows increment or decrement the index, with checks to prevent out of bounds values. With my cards, I have created a function to build the card HTML, using interpolation to add the data from the class where needed. A foreach loop then iterates through the array and creates a card for every entry.
 
 Tooltips have been added on initial page load to prompt the user to click them. I felt that perhaps clicking the card my not be intuitive for a lot of users, so adding a prompt is an easy way to explain this function. Once the card has been clicked the tooltips are hidden, as they are no longer needed.
 
-
+For the Navbar I originally planned for a burger menu, however as the site didn't have many pages, I felt the complexity of coding one outweighed the benefits in the timeframe of this project. Given it was only 3 links and a toggle for contrast, I opted to simply enlarge it, and center it on mobile layouts using breakpoints. This is definitely an area using something like Bootstrap would have come in handy.
 
 ## Color and Fonts
 
