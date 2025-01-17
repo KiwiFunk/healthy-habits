@@ -542,6 +542,26 @@ body.high-contrast {
     background-color: var(--accent-color-alt);
 }
 
+/* Success Page */
+
+#successPrompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#successPrompt h3 {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 4px;
+}
+
+#successPrompt a {
+    margin-top: 10px;
+}
+
 /* Animations */
 
 @keyframes wiggle {
