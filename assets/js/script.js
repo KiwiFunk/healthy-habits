@@ -24,7 +24,7 @@ const cardContentsArray = [
             roles in maintaining cognitive function, regulating neurotransmitters, and protecting against stress-related mental health issues.`,
         image: "assets/images/EatHealthy.webp",
         imagealt: "Mascot holding an apple",
-        linkname: "Learn More",
+        linkname: "About Healthy Eating",
         linkhref: "details.html?details=eathealthy",
         linkaria: "Learn more about eating healthy"
     },
@@ -36,7 +36,7 @@ const cardContentsArray = [
             exercise, meditation, or talking with friends, can significantly improve your quality of life and protect your long-term mental well-being.`,
         image: "assets/images/Stress.webp",
         imagealt: "Mascot looking stressed with a coffee cup",
-        linkname: "Learn More",
+        linkname: "Learn about Stress",
         linkhref: "details.html?details=managestress",
         linkaria: "Learn more about managing stress"
     },
@@ -48,7 +48,7 @@ const cardContentsArray = [
             self-confidence and provides a sense of accomplishment, contributing to overall emotional well-being and life satisfaction.`,
         image: "assets/images/Learn.webp",
         imagealt: "Mascot playing guitar",
-        linkname: "Learn More",
+        linkname: "Learn about Skills",
         linkhref: "details.html?details=newskills",
         linkaria: "Find out more about learning new skills"
     },
@@ -60,7 +60,7 @@ const cardContentsArray = [
             creating a positive cycle that enhances both physical and mental health outcomes.`,
         image: "assets/images/Exercise.webp",
         imagealt: "Mascot Exercising",
-        linkname: "Learn More",
+        linkname: "Learn about exercise",
         linkhref: "details.html?details=regularexercise",
         linkaria: "Learn more about why regular exercise is so important"
     },
@@ -72,7 +72,7 @@ const cardContentsArray = [
             and helps establish a stronger connection with the natural world, leading to improved mood and emotional balance.`,
         image: "assets/images/Nature.webp",
         imagealt: "Mascot in nature with a bird on their paw",
-        linkname: "Learn More",
+        linkname: "Why Nature is Cool",
         linkhref: "details.html?details=outdoors",
         linkaria: "Discover the benefits of spending time outdoors"
     },
@@ -84,7 +84,7 @@ const cardContentsArray = [
             and concentration, and develop a greater sense of inner peace and self-awareness in daily life.`,
         image: "assets/images/Mindfullness.webp",
         imagealt: "Mascot meditating",
-        linkname: "Learn More",
+        linkname: "Mindfulness advice",
         linkhref: "details.html?details=mindfulness",
         linkaria: "Learn more about why mindfulness practice is so important."
     },
@@ -96,7 +96,7 @@ const cardContentsArray = [
             the body's natural detoxification processes, all of which contribute to better mental health and emotional stability.`,
         image: "assets/images/Hydrated.webp",
         imagealt: "Mascot holding up a water bottle",
-        linkname: "Learn More",
+        linkname: "Learn about Hydration",
         linkhref: "details.html?details=hydration",
         linkaria: "Find out more about how much water you should drink, and the benefits of staying hydrated."
     },
@@ -108,7 +108,7 @@ const cardContentsArray = [
             that helps buffer against stress, anxiety, and depression through shared experiences and mutual understanding.`,
         image: "assets/images/Friends.webp",
         imagealt: "Mascot embracing a friend",
-        linkname: "Learn More",
+        linkname: "Advice on Friendship",
         linkhref: "details.html?details=friendship",
         linkaria: "More details on the importance of friendships, and links to tips on making new friends."
     },
@@ -120,7 +120,7 @@ const cardContentsArray = [
             a crucial factor in maintaining optimal mental health and emotional balance throughout life.`,
         image: "assets/images/Sleep.webp",
         imagealt: "Mascot sleeping on the ground",
-        linkname: "Learn More",
+        linkname: "Sleep Advice",
         linkhref: "details.html?details=sleep",
         linkaria: "More information on the importance of sleep, and links to help assist you."
     },
