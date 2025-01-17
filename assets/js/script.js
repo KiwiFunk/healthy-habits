@@ -379,3 +379,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+   // Contact Form Validation
+   document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        const nameInput = document.getElementById('name');
+        const anonymousCheckbox = document.getElementById('anonymous');
+
+        contactForm.addEventListener('submit', (event) => {
+            // Check if name is empty and anonymous is unchecked
+            if (nameInput.value.trim() === '' && !anonymousCheckbox.checked) {
+                event.preventDefault();
+                nameInput.setCustomValidity('Please enter your name or check the anonymous box');
+                nameInput.reportValidity();
+            } else {
+                nameInput.setCustomValidity('');
+            }
+        });
+
+        // Clear validation when checkbox changes
+        anonymousCheckbox.addEventListener('change', () => {
+            nameInput.setCustomValidity('');
+            nameInput.reportValidity();
+        });
+    }
+});
