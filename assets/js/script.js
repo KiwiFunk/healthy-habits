@@ -1,7 +1,7 @@
 // Card Contents
 
-class CardContents{
-    constructor(heading, mainText, extraText, image, imagealt, linkname, linkhref, linkaria){
+class CardContents {
+    constructor(heading, mainText, extraText, image, imagealt, linkname, linkhref, linkaria) {
         this.heading = heading;
         this.mainText = mainText;
         this.extraText = extraText;
@@ -13,117 +13,116 @@ class CardContents{
     }
 }
 
-//Creating an array of card contents
-
+// Creating an array of card contents
 const cardContentsArray = [
-    {
-        heading: "Eat Healthy",
-        mainText: `A balanced diet rich in nutrients not only fuels your body but also supports brain health, 
+    new CardContents(
+        "Eat Healthy",
+        `A balanced diet rich in nutrients not only fuels your body but also supports brain health, 
             improving mood, reducing anxiety, and boosting overall mental well-being.`,
-        extraText: `Essential nutrients like omega-3 fatty acids, B vitamins, and antioxidants play crucial 
+        `Essential nutrients like omega-3 fatty acids, B vitamins, and antioxidants play crucial 
             roles in maintaining cognitive function, regulating neurotransmitters, and protecting against stress-related mental health issues.`,
-        image: "assets/images/EatHealthy.webp",
-        imagealt: "Mascot holding an apple",
-        linkname: "About Healthy Eating",
-        linkhref: "details.html?details=eathealthy",
-        linkaria: "Learn more about eating healthy"
-    },
-    {
-        heading: "Manage Stress",
-        mainText: `Effective stress management is vital for maintaining mental health and emotional balance, 
+        "assets/images/EatHealthy.webp",
+        "Mascot holding an apple",
+        "About Healthy Eating",
+        "details.html?details=eathealthy",
+        "Learn more about eating healthy"
+    ),
+    new CardContents(
+        "Manage Stress",
+        `Effective stress management is vital for maintaining mental health and emotional balance, 
             as chronic stress can lead to anxiety, depression, and various physical health problems when left unchecked.`,
-        extraText: `Learning to recognize stress triggers and developing healthy coping mechanisms, such as 
+        `Learning to recognize stress triggers and developing healthy coping mechanisms, such as 
             exercise, meditation, or talking with friends, can significantly improve your quality of life and protect your long-term mental well-being.`,
-        image: "assets/images/Stress.webp",
-        imagealt: "Mascot looking stressed with a coffee cup",
-        linkname: "Learn about Stress",
-        linkhref: "details.html?details=managestress",
-        linkaria: "Learn more about managing stress"
-    },
-    {
-        heading: "Learn New Things",
-        mainText: `Learning new skills and hobbies keeps your mind active and engaged, promoting cognitive 
+        "assets/images/Stress.webp",
+        "Mascot looking stressed with a coffee cup",
+        "Learn about Stress",
+        "details.html?details=managestress",
+        "Learn more about managing stress"
+    ),
+    new CardContents(
+        "Learn New Things",
+        `Learning new skills and hobbies keeps your mind active and engaged, promoting cognitive 
             flexibility and creating new neural connections that help maintain brain health and mental sharpness.`,
-        extraText: `This mental stimulation not only enhances problem-solving abilities but also boosts 
+        `This mental stimulation not only enhances problem-solving abilities but also boosts 
             self-confidence and provides a sense of accomplishment, contributing to overall emotional well-being and life satisfaction.`,
-        image: "assets/images/Learn.webp",
-        imagealt: "Mascot playing guitar",
-        linkname: "Learn about Skills",
-        linkhref: "details.html?details=newskills",
-        linkaria: "Find out more about learning new skills"
-    },
-    {
-        heading: "Regular Exercise",
-        mainText: `Regular exercise is great for mental health, releasing endorphins and other mood-enhancing chemicals 
+        "assets/images/Learn.webp",
+        "Mascot playing guitar",
+        "Learn about Skills",
+        "details.html?details=newskills",
+        "Find out more about learning new skills"
+    ),
+    new CardContents(
+        "Regular Exercise",
+        `Regular exercise is great for mental health, releasing endorphins and other mood-enhancing chemicals 
             that naturally reduce stress, anxiety, and depression while improving overall emotional well-being.`,
-        extraText: `Physical activity also promotes better sleep patterns, increases energy levels, and boosts self-esteem,
+        `Physical activity also promotes better sleep patterns, increases energy levels, and boosts self-esteem,
             creating a positive cycle that enhances both physical and mental health outcomes.`,
-        image: "assets/images/Exercise.webp",
-        imagealt: "Mascot Exercising",
-        linkname: "Learn about exercise",
-        linkhref: "details.html?details=regularexercise",
-        linkaria: "Learn more about why regular exercise is so important"
-    },
-    {
-        heading: "Spend Time Outdoors",
-        mainText: `Spending time in nature has been scientifically proven to reduce stress levels, lower blood pressure, 
+        "assets/images/Exercise.webp",
+        "Mascot Exercising",
+        "Learn about exercise",
+        "details.html?details=regularexercise",
+        "Learn more about why regular exercise is so important"
+    ),
+    new CardContents(
+        "Spend Time Outdoors",
+        `Spending time in nature has been scientifically proven to reduce stress levels, lower blood pressure, 
             and decrease anxiety by exposing us to natural environments that promote relaxation and mental restoration.`,
-        extraText: `Additionally, being outdoors increases exposure to vitamin D from sunlight, boosts serotonin production,
+        `Additionally, being outdoors increases exposure to vitamin D from sunlight, boosts serotonin production,
             and helps establish a stronger connection with the natural world, leading to improved mood and emotional balance.`,
-        image: "assets/images/Nature.webp",
-        imagealt: "Mascot in nature with a bird on their paw",
-        linkname: "Why Nature is Cool",
-        linkhref: "details.html?details=outdoors",
-        linkaria: "Discover the benefits of spending time outdoors"
-    },
-    {
-        heading: "Practice Mindfulness",
-        mainText: `Mindfulness practice helps reduce stress and anxiety by training your mind to stay present in the moment, 
+        "assets/images/Nature.webp",
+        "Mascot in nature with a bird on their paw",
+        "Why Nature is Cool",
+        "details.html?details=outdoors",
+        "Discover the benefits of spending time outdoors"
+    ),
+    new CardContents(
+        "Practice Mindfulness",
+        `Mindfulness practice helps reduce stress and anxiety by training your mind to stay present in the moment, 
             rather than worrying about the future or dwelling on the past, promoting mental clarity and emotional balance.`,
-        extraText: `Regular mindfulness meditation can strengthen your ability to manage difficult emotions, improve focus
+        `Regular mindfulness meditation can strengthen your ability to manage difficult emotions, improve focus
             and concentration, and develop a greater sense of inner peace and self-awareness in daily life.`,
-        image: "assets/images/Mindfullness.webp",
-        imagealt: "Mascot meditating",
-        linkname: "Mindfulness advice",
-        linkhref: "details.html?details=mindfulness",
-        linkaria: "Learn more about why mindfulness practice is so important."
-    },
-    {
-        heading: "Stay Hydrated",
-        mainText: `Proper hydration is essential for optimal brain function and mental clarity, as even mild dehydration 
+        "assets/images/Mindfullness.webp",
+        "Mascot meditating",
+        "Mindfulness advice",
+        "details.html?details=mindfulness",
+        "Learn more about why mindfulness practice is so important."
+    ),
+    new CardContents(
+        "Stay Hydrated",
+        `Proper hydration is essential for optimal brain function and mental clarity, as even mild dehydration 
             can negatively impact mood, concentration, and cognitive performance throughout the day.`,
-        extraText: `Maintaining adequate water intake helps regulate neurotransmitter function, reduces stress levels, and supports 
+        `Maintaining adequate water intake helps regulate neurotransmitter function, reduces stress levels, and supports 
             the body's natural detoxification processes, all of which contribute to better mental health and emotional stability.`,
-        image: "assets/images/Hydrated.webp",
-        imagealt: "Mascot holding up a water bottle",
-        linkname: "Learn about Hydration",
-        linkhref: "details.html?details=hydration",
-        linkaria: "Find out more about how much water you should drink, and the benefits of staying hydrated."
-    },
-    {
-        heading: "Make Friends",
-        mainText: `Building and maintaining real-life friendships through face-to-face interactions provides essential emotional support, 
+        "assets/images/Hydrated.webp",
+        "Mascot holding up a water bottle",
+        "Learn about Hydration",
+        "details.html?details=hydration",
+        "Find out more about how much water you should drink, and the benefits of staying hydrated."
+    ),
+    new CardContents(
+        "Make Friends",
+        `Building and maintaining real-life friendships through face-to-face interactions provides essential emotional support, 
             deeper connections, and stronger social bonds that are crucial for mental health and emotional well-being.`,
-        extraText: `Regular social interactions stimulate the release of positive hormones like oxytocin and serotonin, while also providing a support network
+        `Regular social interactions stimulate the release of positive hormones like oxytocin and serotonin, while also providing a support network
             that helps buffer against stress, anxiety, and depression through shared experiences and mutual understanding.`,
-        image: "assets/images/Friends.webp",
-        imagealt: "Mascot embracing a friend",
-        linkname: "Advice on Friendship",
-        linkhref: "details.html?details=friendship",
-        linkaria: "More details on the importance of friendships, and links to tips on making new friends."
-    },
-    {
-        heading: "Get Enough Sleep",
-        mainText: `Quality sleep is essential for mental well-being, as it allows your brain to process emotions, consolidate memories, 
+        "assets/images/Friends.webp",
+        "Mascot embracing a friend",
+        "Advice on Friendship",
+        "details.html?details=friendship",
+        "More details on the importance of friendships, and links to tips on making new friends."
+    ),
+    new CardContents(
+        "Get Enough Sleep",
+        `Quality sleep is essential for mental well-being, as it allows your brain to process emotions, consolidate memories, 
             and restore vital neural connections that support psychological resilience and emotional stability.`,
-        extraText: `Studies show that consistent, adequate sleep improves mood regulation, reduces stress levels, and enhances cognitive function, making it 
+        `Studies show that consistent, adequate sleep improves mood regulation, reduces stress levels, and enhances cognitive function, making it 
             a crucial factor in maintaining optimal mental health and emotional balance throughout life.`,
-        image: "assets/images/Sleep.webp",
-        imagealt: "Mascot sleeping on the ground",
-        linkname: "Sleep Advice",
-        linkhref: "details.html?details=sleep",
-        linkaria: "More information on the importance of sleep, and links to help assist you."
-    },
+        "assets/images/Sleep.webp",
+        "Mascot sleeping on the ground",
+        "Sleep Advice",
+        "details.html?details=sleep",
+        "More information on the importance of sleep, and links to help assist you."
+    )
 ];
 
 //Mobile Content
@@ -131,18 +130,18 @@ const cardContentsArray = [
 let currentIndex = 0;
 
 function updateMainContent(index) {
-    const content = cardContentsArray[index];
-    if (content) {
-        document.querySelector('#mobile-content .image-container img').src = content.image;
-        document.querySelector('#mobile-content .image-container img').alt = content.imagealt;
-        document.querySelector('#mobile-content h2').textContent = content.heading;
-        document.querySelector('#mobile-content .main-text').textContent = content.mainText;
-        document.querySelector('#mobile-content .extra-text').textContent = content.extraText;
-        document.getElementById("buttonlink").innerHTML = content.linkname;
-        document.getElementById("buttonlink").href = content.linkhref;
-        document.getElementById("buttonlink").setAttribute("aria-label", content.linkaria);
-    }
+    const cardContent = cardContentsArray[index];
+
+    document.querySelector('#mobile-content .image-container img').src = cardContent.image;
+    document.querySelector('#mobile-content .image-container img').alt = cardContent.imagealt;
+    document.querySelector('#mobile-content h2').textContent = cardContent.heading;
+    document.querySelector('#mobile-content .main-text').textContent = cardContent.mainText;
+    document.querySelector('#mobile-content .extra-text').textContent = cardContent.extraText;
+    document.getElementById("buttonlink").innerHTML = cardContent.linkname;
+    document.getElementById("buttonlink").href = cardContent.linkhref;
+    document.getElementById("buttonlink").setAttribute("aria-label", cardContent.linkaria);
 }
+
 
 // Call the function on page load with the first card content
 document.addEventListener('DOMContentLoaded', () => {
